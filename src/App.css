@@ -9,5 +9,7 @@
 }
 .TvTile{
   flex: 1;
-  margin: 30px;
+}
+img {
+  width: 100%;
 }

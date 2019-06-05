@@ -1,26 +1,39 @@
 import React from 'react';
 import './App.css';
-import './'
-import './'
-import './'
-import './'
-import './'
-import './'
+import blackMirror from './black-mirror.jpg'
+import breakingBad from './breaking-bad.jpg'
+import deathNote from './death-note.jpg'
+import GoT from './game-of-thrones.jpg'
+import theMist from './the-mist.jpg'
+import theWalkingDead from './the-walking-dead.jpg'
+import theWire from './the-wire.jpg'
 
 function App() {
   return (
-  <div className="App">
-    <div className="Row1">
-      <div className="TvTile"><h1>black mirror</h1></div>    
-      <div className="TvTile"><h1>breaking bad</h1></div>
-      <div className="TvTile"><h1>death note</h1></div>  
-    </div>   
-    <div className="Row2">
-      <div className="TvTile"><h1>game of thrones</h1></div>
-      <div className="TvTile"><h1>the walking dead</h1></div>  
-      <div className="TvTile"><h1>the wire</h1></div>   
-    </div> 
-  </div>
+    <div className="App">
+      <div className="Row1">
+        <div className="TvTile">
+          <img src={blackMirror} alt="blackt mirror" />
+        </div>
+        <div className="TvTile">
+          <img src={breakingBad} alt="breaking bad" />
+        </div>
+        <div className="TvTile">
+          <img src={deathNote} alt="death note" />
+        </div>
+      </div>
+      <div className="Row2">
+        <div className="TvTile">
+          <img src={GoT} alt="game of thrones" />
+        </div>
+        <div className="TvTile">
+          <img src={theWalkingDead} alt="the walking dead" />
+        </div>
+        <div className="TvTile">
+          <img src={theWire} alt="the wire" />
+        </div>
+      </div>
+    </div>
   );
 }
 
