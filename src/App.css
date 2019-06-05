@@ -1,7 +1,13 @@
 .App {
   text-align: center;
 }
-
-img{
-  width: 100%
+.Row1 {
+  display: flex;
+}
+.Row2 {
+  display: flex;
+}
+.TvTile{
+  flex: 1;
+  margin: 30px;
 }
