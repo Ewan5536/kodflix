@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import ShowStack from './ShowStack';
 import blackMirror from './black-mirror.jpg'
 import breakingBad from './breaking-bad.jpg'
 import deathNote from './death-note.jpg'
@@ -12,47 +13,18 @@ function App() {
   return (
     <div className="App">
       <div className="Row">
-        <div className="TvTile">
-          <img src={blackMirror} alt="blackt mirror" />
-          <div className="TitleOverLay">
-            <h1>Black Mirror</h1>
-          </div>
-        </div>
-        <div className="TvTile">
-          <img src={breakingBad} alt="breaking bad" />
-          <div className="TitleOverLay">
-            <h1>Breaking Bad</h1>
-          </div>
-        </div>
-        <div className="TvTile">
-          <img src={deathNote} alt="death note" />
-          <div className="TitleOverLay">
-            <h1>Death Note</h1>
-          </div>
-        </div>
+        <ShowStack name= "Black Mirror" tvShowLogo={blackMirror}/>
+        <ShowStack name= "Breaking Bad" tvShowLogo={breakingBad}/>
+        <ShowStack name= "Death Note" tvShowLogo={deathNote}/>
       </div>
       <div className="Row">
-        <div className="TvTile">
-          <img src={GoT} alt="game of thrones" />
-          <div className="TitleOverLay">
-            <h1>Game of Thrones</h1>
-          </div>
-        </div>
-        <div className="TvTile">
-          <img src={theWalkingDead} alt="the walking dead" />
-          <div className="TitleOverLay">
-            <h1>The Walking Dead</h1>
-          </div>
-        </div>
-        <div className="TvTile">
-          <img src={theWire} alt="the wire" />
-          <div className="TitleOverLay">
-            <h1>The Wire</h1>
-          </div>
-        </div>
+        <ShowStack name= "Game of Thrones" tvShowLogo={GoT}/>
+        <ShowStack name= "The Walking Dead" tvShowLogo={theWalkingDead}/>
+        <ShowStack name= "The Wire" tvShowLogo={theWire}/>
       </div>
     </div>
   );
 }
+
 
 export default App;
