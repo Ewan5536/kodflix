@@ -11,7 +11,7 @@ import theWire from './the-wire.jpg'
 function App() {
   return (
     <div className="App">
-      <div className="Row1">
+      <div className="Row">
         <div className="TvTile">
           <img src={blackMirror} alt="blackt mirror" />
         </div>
@@ -22,7 +22,7 @@ function App() {
           <img src={deathNote} alt="death note" />
         </div>
       </div>
-      <div className="Row2">
+      <div className="Row">
         <div className="TvTile">
           <img src={GoT} alt="game of thrones" />
         </div>

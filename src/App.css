@@ -1,15 +1,17 @@
 .App {
   text-align: center;
 }
-.Row1 {
+.Row {
   display: flex;
 }
-.Row2 {
-  display: flex;
-}
-.TvTile{
+.TvTile {
   flex: 1;
 }
 img {
   width: 100%;
+}
+@media only screen and (max-width: 600px) {
+  .Row{
+    flex-direction: column;
+  }
 }
