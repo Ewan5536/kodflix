@@ -2,13 +2,27 @@
   text-align: center;
 }
 .Row {
-  display: flex;
+  display: flex; 
 }
 .TvTile {
   flex: 1;
+  border:1px solid green;
+  position: relative;
 }
 img {
   width: 100%;
+}
+.TitleOverLay{
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width:100%;
+  background-color: green;
+  opacity: .5;
+}
+.TvTile:hover .TitleOverLay{
+  display: block;
 }
 @media only screen and (max-width: 600px) {
   .Row{
