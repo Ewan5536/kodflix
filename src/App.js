@@ -1,14 +1,19 @@
 import React from 'react';
-import Gallery from './Gallery'
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Gallery from './Gallery';
+import Details from './Details';
 import './App.css';
 
 
 function App() {
   return (
-    <div className="App">
-      <Gallery />
-    </div>
+    <Router>
+
+      <div className="App">
+        <Route exact path='/' component={Gallery} />
+        <Route exact path='/details' component={Details} />
+      </div>
+    </Router>
   );
 }
-
 export default App;
