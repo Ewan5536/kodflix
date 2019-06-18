@@ -3,10 +3,14 @@
   background-color: black;
 }
 .Row {
-  display: flex; 
+  /* display: flex; 
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px, 1fr));
 }
 .TvTile {
-  flex: 1;
+  /* flex: 1;
+  flex-basis: 120px; */
   /*border:1px solid green;*/
   position: relative;
   overflow: hidden;
@@ -27,8 +31,8 @@ img {
   opacity: .6;
   bottom: 0;
 }
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .Row{
     flex-direction: column;
   }
-}
+} */
