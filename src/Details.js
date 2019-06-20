@@ -6,7 +6,7 @@ export default class Details extends Component {
   constructor() {
     super();
     this.state = {
-      welcomeMessage: 'welcome to details page, WIP :)))'
+      welcomeMessage: 'Welcome to details page, WIP :)))'
     };
   }
   componentDidMount() {
@@ -14,7 +14,7 @@ export default class Details extends Component {
       this.setState ({
         welcomeMessage: 'check out the latest from kodfilx!'
       });
-    }, 3000);
+    }, 2500);
   }
 
 
