@@ -1,0 +1,39 @@
+.App {
+  text-align: center;
+  background-color: white;
+}
+.Row {
+  /* display: flex; 
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns:repeat(auto-fit,minmax(181px, 1fr));
+}
+.TvTile {
+  /* flex: 1;
+  flex-basis: 161px; */
+  /* border:1px solid green; */
+  position: relative;
+  overflow: hidden;
+}
+img {
+  width: 100%;
+}
+.TitleOverLay{
+  transition: bottom cubic-bezier(0, 0, 0.57, 1.71) 1s;
+  position: absolute;
+  bottom: -200px;
+  left: 0;
+  width:100%;
+  background-color: red;
+  
+  opacity: 0.8;
+}
+.TvTile:hover .TitleOverLay{
+  opacity: .9;
+  bottom: 0;
+}
+/* @media only screen and (max-width: 600px) {
+  .Row{
+    flex-direction: column;
+  }
+} */
