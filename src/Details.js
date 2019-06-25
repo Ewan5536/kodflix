@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 import getTvshow from './galTvShow';
 
 export default class Details extends Component {
@@ -20,11 +20,17 @@ export default class Details extends Component {
 
 
   render() {
-    return (
-      <div>
-        <h1>{this.state.Show.name}</h1>
-        <Link to="/"><i>Back to home page</i></Link>
-      </div>
-    );
+    if (this.state.Show=== undefined) { 
+      // not found
+      return <Redirect to='/not-found' />;
+    } else {
+      return (
+        <div>
+          <h1>{this.state.Show.name}</h1>
+          <Link to="/"><i>Back to home page</i></Link>
+        </div>
+      );
+    }
+
   }
 }
