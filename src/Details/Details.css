@@ -1,0 +1,17 @@
+.Details .content {
+    background-color: aqua;
+    display: flex;
+}
+.Details .content .text ,
+.Details .content .image {
+    padding: 35px;
+}
+
+a:hover {
+color: yellow;
+}
+@media only screen and (max-width: 600px) {
+    .Details .content {
+        flex-direction: column;
+    }
+}

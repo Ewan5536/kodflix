@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link, Redirect } from 'react-router-dom';
-import getTvshow from './galTvShow';
+import getTvshow from '../galTvShow';
+import './Details.css';
 
 export default class Details extends Component {
 
@@ -20,17 +21,25 @@ export default class Details extends Component {
 
 
   render() {
-    if (this.state.Show=== undefined) { 
-      // not found
+    if (this.state.Show === undefined) {
       return <Redirect to='/not-found' />;
     } else {
       return (
-        <div>
+        <div className='Details'>
           <h1>{this.state.Show.name}</h1>
-          <Link to="/"><i>Back to home page</i></Link>
+          <div className='content'>
+            <div className= 'text'>
+              <h2>{this.state.Show.synopsis}</h2>
+            </div>
+            
+            <img
+              className='image'
+              src={this.state.Show.tvShowLogo}
+              alt={this.state.Show.name} />
+          </div>
+          <Link to="/"><h2><i>Back to home page</i></h2></Link>
         </div>
       );
     }
-
   }
 }
