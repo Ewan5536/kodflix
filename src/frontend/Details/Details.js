@@ -17,6 +17,12 @@ export default class Details extends Component {
       Show.id === tvShow
     );
     this.setState({ Show });
+    fetch('/rest/shows').then(function(response) {
+      return response.json();
+    })
+    .then(function(getTvshow) {
+      console.log(JSON.stringify(getTvshow));
+    });
   }
 
 

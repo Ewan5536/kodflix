@@ -1,4 +1,4 @@
-module.exports= function getTvshow() {
+module.exports= function getTvshows() {
     return [
         { id: "blkMirror", name: "Black Mirror", synopsis: 'Black Mirror is a British science fiction anthology  television series created by Charlie Brooker, with Brooker and Annabel Jones serving as the programme showrunners. It examines modern society, particularly with regard to the unanticipated consequences of new technologies. '},
         { id: "breakBad", name: "Breaking Bad", synopsis: 'Mild-mannered high school chemistry teacher Walter White thinks his life can\'t get much worse. His salary barely makes ends meet, a situation not likely to improve once his pregnant wife gives birth, and their teenage son is battling cerebral palsy. But Walter is dumbstruck when he learns he has terminal cancer. Realizing that his illness probably will ruin his family financially, Walter makes a desperate bid to earn as much money as he can in the time he has left by turning an old RV into a meth lab on wheels.' },
