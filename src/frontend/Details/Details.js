@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link, Redirect } from 'react-router-dom';
-// import getTvshow from '../galTvShow';
 import './Details.css';
 
 export default class Details extends Component {
@@ -42,7 +41,7 @@ export default class Details extends Component {
       );
     }
     else {
-      return <div/>
+      return <div class="loader"/>
     }
   }
 }
