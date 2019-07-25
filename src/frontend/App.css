@@ -7,15 +7,12 @@ html {
   background-color: white;
 }
 .Row {
-  /* display: flex; 
-  flex-wrap: wrap; */
+ 
   display: grid;
   grid-template-columns:repeat(auto-fit,minmax(181px, 1fr));
 }
 .TvTile {
-  /* flex: 1;
-  flex-basis: 161px; */
-  /* border:1px solid green; */
+ 
   position: relative;
   overflow: hidden;
 }
@@ -36,11 +33,7 @@ img {
   opacity: .9;
   bottom: 0;
 }
-/* @media only screen and (max-width: 600px) {
-  .Row{
-    flex-direction: column;
-  }
-} */
+
 .loader {
   border: 16px solid #f3f3f3; /* Light grey */
   border-top: 16px solid #3498db; /* Blue */
